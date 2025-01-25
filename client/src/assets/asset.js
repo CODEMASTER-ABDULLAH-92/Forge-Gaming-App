@@ -68,9 +68,11 @@ import v2 from "/src/assets/v2.png";
 import yt from "/src/assets/yt.png";
 import menu from "/src/assets/menu.png";
 import cross from "/src/assets/cross.png";
+import Vector from "/src/assets/Vector.png";
 
 export const asset = {
   arr,
+  Vector,
   cross,
   menu,
   one,

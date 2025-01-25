@@ -1,30 +1,44 @@
-import { createSlice } from '@reduxjs/toolkit'
-
-const initialState = {
-  value: 0,
-}
+import { createSlice } from '@reduxjs/toolkit';
+import { battle } from '../../assets/asset';
+const loadStateFromLocalStorage = () => {
+  const savedState = localStorage.getItem('cart'); // Get the saved cart from localStorage
+  return savedState ? JSON.parse(savedState) : { value: {} }; // Parse it if it exists, or return a default state
+};
+const initialState = loadStateFromLocalStorage();
 
 export const counterSlice = createSlice({
   name: 'game',
   initialState,
+  battle,
   reducers: {
-    increment: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
-      state.value += 1
+    addToCart: (state, action) => {
+      const itemId = action.payload;
+      if (!state.value[itemId]) {
+        state.value[itemId] = 1;
+      } else {
+        state.value[itemId] += 1;
+      }
+      localStorage.setItem('cart', JSON.stringify(state));
     },
-    decrement: (state) => {
-      state.value -= 1
+    removeFromCart: (state, action) => {
+      const itemId = action.payload;
+      if (state.value[itemId]) {
+        if (state.value[itemId] > 1) {
+          state.value[itemId] -= 1;
+        } else {
+          delete state.value[itemId];
+        }
+        localStorage.setItem('cart', JSON.stringify(state));
+      }
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
+    clearCart: (state) => {
+      state.value = {};
+      // Remove cart from localStorage
+      localStorage.removeItem('cart');
     },
   },
-})
+});
 
-// Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { addToCart, removeFromCart, clearCart } = counterSlice.actions;
 
-export default counterSlice.reducer
+export default counterSlice.reducer;

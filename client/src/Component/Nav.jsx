@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import {Link,NavLink} from 'react-router-dom'
 import {asset} from '../assets/asset'
-
+import { useSelector } from 'react-redux';
 const Nav = () => {
   const [hide,setHide] = useState(false);
+  // const value = useSelector((state)=> state.game.)
   return (
     <nav className="bg-transparent text-white md:px-[3%] lg:px-[5%] py-3 relative">
       <div className='flex items-center justify-between'>
@@ -27,7 +28,8 @@ const Nav = () => {
 </div>
 <div className='flex items-center gap-3 relative'>
   <img src={asset.cart} alt="" />
-  <div className='h-4 w-4 rounded-full bg-[#f9d759] absolute top-1 left-3 text-black text-[10px] font-bold flex justify-center items-center'>4</div>
+              <div className='h-4 w-4 rounded-full bg-[#f9d759] absolute top-1 left-3 text-black text-[10px] font-bold flex justify-center items-center'>
+              </div>
   <h1 className='text-[16px] text-red-500 font-bold'><span className='text-gray-500 text-xs'>Shopping Card</span><br />
   $0.00</h1>
 </div>
@@ -59,5 +61,4 @@ const Nav = () => {
 export default Nav;
 
 
-// // background: linear-gradient(90deg, #FF1B6B 0%, #2472FC 100%);
-
+// // // background: linear-gradient(90deg, #FF1B6B 0%, #2472FC 100%);

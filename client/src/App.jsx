@@ -4,6 +4,7 @@ import Footer from './Component/Footer'
 import { Route, Routes } from 'react-router-dom'
 import Detail from './pages/Detail'
 import Home from './pages/Home'
+import Shop from './pages/Shop'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Nav/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/Shop' element={<Shop/>}/>
         <Route path={`/detail/:id`} element={<Detail/>}/>
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>

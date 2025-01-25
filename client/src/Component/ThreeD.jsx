@@ -1,8 +1,10 @@
 import React from 'react'
 import { battle, asset } from '../assets/asset'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const ThreeD = () => {
+  const navigate = useNavigate();
+
   return (
     <div className='px-[5%]'>
       <div className='flex justify-between items-center'>
@@ -17,7 +19,7 @@ Shop Iconic
       <p className='text-[#a8aebf] pt-2'>Detailed, Handcrafted Figures at Affordable Prices</p>
       </div>
 
-      <button className='md:flex self-center border-2 hidden border-red-500 gap-3 my-5  py-3 px-10 rounded-3xl'> <img src={asset.arr} className='self-center' alt="" /> View All</button>
+      <button onClick={()=>navigate('/Shop')} className='md:flex self-center border-2 hidden border-red-500 gap-3 my-5  py-3 px-10 rounded-3xl'> <img src={asset.arr} className='self-center' alt="" /> View All</button>
       </div>
         <div className=' grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 justify-center items-center my-16' >
       {
