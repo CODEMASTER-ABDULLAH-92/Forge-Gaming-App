@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="flex justify-center items-center mt-6">
           <img
             src={asset.herobannar}
-            className="object-cover object-center rounded-lg shadow-lg w-full max-h-[500px]"
+            className="object-cover object-center rounded-lg shadow-lg w-full h-[500px]"
             alt="Hero Banner"
           />
         </div>

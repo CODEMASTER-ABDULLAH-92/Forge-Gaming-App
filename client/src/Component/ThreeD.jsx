@@ -26,11 +26,11 @@ Shop Iconic
         battle.slice(0,8).map((item,index)=>{
           return (
 
-  <Link to={`/detail/${item._id}`} key={item._id} className='bg-[#1b1b1b] p-4 rounded-xl justify-start py-5 items-start flex flex-col'>
+  <Link to={`/detail/${item._id}`} key={item._id} className='bg-[#1b1b1b] p-4 rounded-xl justify-between  py-5 items-start flex h-[400px] flex-col'>
               <img src={item.image} className='self-center' alt="" />
               <p className='pl-4 pt-2 text-xl font-semibold'>{item.gameName}</p>
               <p className='pl-4 pt-2 text-[16px]'>{item.price}</p>
-              <button className='flex self-center border-2 border-red-500 gap-3 my-5 px-[21%] py-3 rounded-3xl'> <img src={asset.cart2} alt="" /> Add To cart</button>
+              <button className='flex  border-2 border-red-500 gap-3 my-5 px-[21%] py-3 rounded-3xl self-end'> <img src={asset.cart2} alt="" /> Add To cart</button>
             </Link>
           )
         })

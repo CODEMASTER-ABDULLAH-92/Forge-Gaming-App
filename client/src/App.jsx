@@ -1,28 +1,60 @@
-import React from 'react'
-import Nav from './Component/Nav'
-import Footer from './Component/Footer'
-import { Route, Routes } from 'react-router-dom'
-import Detail from './pages/Detail'
-import Home from './pages/Home'
-import Shop from './pages/Shop'
+// import React from 'react'
+// import Nav from './Component/Nav'
+// import Footer from './Component/Footer'
+// import { Route, Routes } from 'react-router-dom'
+// import Detail from './pages/Detail'
+// import Home from './pages/Home'
+// import Shop from './pages/Shop'
+
+// const App = () => {
+//   return (
+//     <div className='bg-[#0a0a0a] text-white'>
+//       <Nav/>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path='/Shop' element={<Shop/>}/>
+//         <Route path={`/detail/:id`} element={<Detail/>}/>
+//         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+//       </Routes>
+//       <Footer/>
+//     </div>
+//   )
+// }
+
+
+// export default App
+
+import React, { useEffect } from 'react';
+import Nav from './Component/Nav';
+import Footer from './Component/Footer';
+import { Route, Routes } from 'react-router-dom';
+import Detail from './pages/Detail';
+import Home from './pages/Home';
+import Shop from './pages/Shop';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 }); // Initialize AOS with a default animation duration of 1200ms
+  }, []);
+
   return (
     <div className='bg-[#0a0a0a] text-white'>
-      <Nav/>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='/Shop' element={<Shop/>}/>
-        <Route path={`/detail/:id`} element={<Detail/>}/>
+        <Route path="/Shop" element={<Shop />} />
+        <Route path={`/detail/:id`} element={<Detail />} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
+export default App;
 
-export default App
 
 
 // Chaos Battletome

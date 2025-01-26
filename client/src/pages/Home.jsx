@@ -9,7 +9,7 @@ import NewsLetter from '../Component/NewsLetter'
 import Snack from '../Component/Snack'
 const Home = () => {
   return (
-    <div>
+    <div className="">
 <Hero/>
 <Popular/>
 <ThreeD/>
@@ -22,4 +22,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
