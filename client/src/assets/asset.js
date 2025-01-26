@@ -58,7 +58,6 @@ import profile from "/src/assets/profile.png";
 import profileIcon from "/src/assets/profileIcon.png";
 import redman from "/src/assets/redman.png";
 import right from "/src/assets/right.png";
-import search from "/src/assets/search.png";
 import snakeBanner from "/src/assets/snakeBanner.png";
 import star from "/src/assets/star.png";
 import tick from "/src/assets/tick.png";
@@ -69,9 +68,11 @@ import yt from "/src/assets/yt.png";
 import menu from "/src/assets/menu.png";
 import cross from "/src/assets/cross.png";
 import Vector from "/src/assets/Vector.png";
+import Search from "/src/assets/search.png";
 
 export const asset = {
   arr,
+  Search,
   Vector,
   cross,
   menu,
@@ -134,7 +135,6 @@ export const asset = {
   profileIcon,
   redman,
   right,
-  search,
   snakeBanner,
   star,
   yt,
@@ -343,6 +343,78 @@ Review2: "Versatile Use:  All models are crafted with intricate detail ensuring 
    Review2:"Optimized for Game Engines:  All models are crafted with intricate detail, ensuring they are perfect.",
    Review2: "Versatile Use:  All models are crafted with intricate detail ensuring they are perfect for both digital and.",
 
+  },
+  {
+    _id:'feheil03492',
+    gameName:'Choas Battletome 13',
+    price:'$98.00',
+    ImgArray:[longHairman,longHairman,longHairman,longHairman],
+    image:longHairman,
+    description:"Step into the chaotic realms where every decision shapes your fate. Command powerful armies and unleash devastating tactics to dominate the battlefield. Victory favors the bold in this high-stakes, action-packed strategy game.",
+    Review:"Discover premium, game-ready 3D models crafted for wargaming, tabletop RPGs, and video game and is  development. Our collection features meticulously designed characters, terrains, and accessories, this is a  optimized for both 3D printing and direct use in popular game engines like Unity and Unreal Engine. is this a Whether you're developing a digital world or creating stunning physical miniatures, our models deliver fan unparalleled detail and flexibility. Available in multiple formats, including STL, OBJ, and FBX, each model is di fully customizable to fit your unique needs.",
+    Review1:"High Quality 3D Models:  All models are crafted with intricate detai ensuring they are perfect for both.",
+   Review2:"Optimized for Game Engines:  All models are crafted with intricate detail, ensuring they are perfect.",
+   Review2: "Versatile Use:  All models are crafted with intricate detail ensuring they are perfect for both digital and.",
+  },
+  {
+    _id:'feheil03492',
+    gameName:'Choas Battletome 13',
+    price:'$98.00',
+    ImgArray:[longHairman,longHairman,longHairman,longHairman],
+    image:longHairman,
+    description:"Step into the chaotic realms where every decision shapes your fate. Command powerful armies and unleash devastating tactics to dominate the battlefield. Victory favors the bold in this high-stakes, action-packed strategy game.",
+    Review:"Discover premium, game-ready 3D models crafted for wargaming, tabletop RPGs, and video game and is  development. Our collection features meticulously designed characters, terrains, and accessories, this is a  optimized for both 3D printing and direct use in popular game engines like Unity and Unreal Engine. is this a Whether you're developing a digital world or creating stunning physical miniatures, our models deliver fan unparalleled detail and flexibility. Available in multiple formats, including STL, OBJ, and FBX, each model is di fully customizable to fit your unique needs.",
+    Review1:"High Quality 3D Models:  All models are crafted with intricate detai ensuring they are perfect for both.",
+   Review2:"Optimized for Game Engines:  All models are crafted with intricate detail, ensuring they are perfect.",
+   Review2: "Versatile Use:  All models are crafted with intricate detail ensuring they are perfect for both digital and.",
+  },
+  {
+    _id:'feheil03492',
+    gameName:'Choas Battletome 13',
+    price:'$98.00',
+    ImgArray:[longHairman,longHairman,longHairman,longHairman],
+    image:longHairman,
+    description:"Step into the chaotic realms where every decision shapes your fate. Command powerful armies and unleash devastating tactics to dominate the battlefield. Victory favors the bold in this high-stakes, action-packed strategy game.",
+    Review:"Discover premium, game-ready 3D models crafted for wargaming, tabletop RPGs, and video game and is  development. Our collection features meticulously designed characters, terrains, and accessories, this is a  optimized for both 3D printing and direct use in popular game engines like Unity and Unreal Engine. is this a Whether you're developing a digital world or creating stunning physical miniatures, our models deliver fan unparalleled detail and flexibility. Available in multiple formats, including STL, OBJ, and FBX, each model is di fully customizable to fit your unique needs.",
+    Review1:"High Quality 3D Models:  All models are crafted with intricate detai ensuring they are perfect for both.",
+   Review2:"Optimized for Game Engines:  All models are crafted with intricate detail, ensuring they are perfect.",
+   Review2: "Versatile Use:  All models are crafted with intricate detail ensuring they are perfect for both digital and.",
+  },
+  {
+    _id:'feheil03492',
+    gameName:'Choas Battletome 13',
+    price:'$98.00',
+    ImgArray:[longHairman,longHairman,longHairman,longHairman],
+    image:longHairman,
+    description:"Step into the chaotic realms where every decision shapes your fate. Command powerful armies and unleash devastating tactics to dominate the battlefield. Victory favors the bold in this high-stakes, action-packed strategy game.",
+    Review:"Discover premium, game-ready 3D models crafted for wargaming, tabletop RPGs, and video game and is  development. Our collection features meticulously designed characters, terrains, and accessories, this is a  optimized for both 3D printing and direct use in popular game engines like Unity and Unreal Engine. is this a Whether you're developing a digital world or creating stunning physical miniatures, our models deliver fan unparalleled detail and flexibility. Available in multiple formats, including STL, OBJ, and FBX, each model is di fully customizable to fit your unique needs.",
+    Review1:"High Quality 3D Models:  All models are crafted with intricate detai ensuring they are perfect for both.",
+   Review2:"Optimized for Game Engines:  All models are crafted with intricate detail, ensuring they are perfect.",
+   Review2: "Versatile Use:  All models are crafted with intricate detail ensuring they are perfect for both digital and.",
+  },
+  {
+    _id:'feheil03492',
+    gameName:'Choas Battletome 13',
+    price:'$98.00',
+    ImgArray:[longHairman,longHairman,longHairman,longHairman],
+    image:longHairman,
+    description:"Step into the chaotic realms where every decision shapes your fate. Command powerful armies and unleash devastating tactics to dominate the battlefield. Victory favors the bold in this high-stakes, action-packed strategy game.",
+    Review:"Discover premium, game-ready 3D models crafted for wargaming, tabletop RPGs, and video game and is  development. Our collection features meticulously designed characters, terrains, and accessories, this is a  optimized for both 3D printing and direct use in popular game engines like Unity and Unreal Engine. is this a Whether you're developing a digital world or creating stunning physical miniatures, our models deliver fan unparalleled detail and flexibility. Available in multiple formats, including STL, OBJ, and FBX, each model is di fully customizable to fit your unique needs.",
+    Review1:"High Quality 3D Models:  All models are crafted with intricate detai ensuring they are perfect for both.",
+   Review2:"Optimized for Game Engines:  All models are crafted with intricate detail, ensuring they are perfect.",
+   Review2: "Versatile Use:  All models are crafted with intricate detail ensuring they are perfect for both digital and.",
+  },
+  {
+    _id:'feheil03492',
+    gameName:'Choas Battletome 13',
+    price:'$98.00',
+    ImgArray:[longHairman,longHairman,longHairman,longHairman],
+    image:longHairman,
+    description:"Step into the chaotic realms where every decision shapes your fate. Command powerful armies and unleash devastating tactics to dominate the battlefield. Victory favors the bold in this high-stakes, action-packed strategy game.",
+    Review:"Discover premium, game-ready 3D models crafted for wargaming, tabletop RPGs, and video game and is  development. Our collection features meticulously designed characters, terrains, and accessories, this is a  optimized for both 3D printing and direct use in popular game engines like Unity and Unreal Engine. is this a Whether you're developing a digital world or creating stunning physical miniatures, our models deliver fan unparalleled detail and flexibility. Available in multiple formats, including STL, OBJ, and FBX, each model is di fully customizable to fit your unique needs.",
+    Review1:"High Quality 3D Models:  All models are crafted with intricate detai ensuring they are perfect for both.",
+   Review2:"Optimized for Game Engines:  All models are crafted with intricate detail, ensuring they are perfect.",
+   Review2: "Versatile Use:  All models are crafted with intricate detail ensuring they are perfect for both digital and.",
   },
   {
     _id:'feheil03492',
