@@ -301,7 +301,7 @@ const Detail = () => {
                 ))}
               </div>
               <img
-                src={data.image || "/fallback-image.jpg"}
+                src={data.ImgArray[0] || "/fallback-image.jpg"}
                 className="w-full max-h-[500px] object-contain rounded-lg shadow-lg"
                 alt={data.gameName || "Game Image"}
               />

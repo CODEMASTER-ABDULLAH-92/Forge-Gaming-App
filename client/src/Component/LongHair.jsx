@@ -44,25 +44,28 @@ const LongHair = () => {
             //   </button>
             // </Link>
             <Link
-  to={`/detail/${item._id}`}
-  key={item._id}
-  className="bg-[#1b1b1b] min-h-[500px] min-w-[312px] rounded-xl justify-start py-5 items-start flex flex-col"
->
-  <img src={item.image} className="self-center" alt={item.gameName} />
-  <p className="pl-4 pt-2 text-xl font-semibold">{item.gameName}</p>
-  <p className="pl-4 pt-2 text-[16px]">{item.price}</p>
-  <button
-    className="flex self-center border-2 border-red-500 gap-3 my-5 px-[21%] py-3 rounded-3xl"
-    onClick={(e) => {
-      e.preventDefault(); // Prevent navigation when the button is clicked
-      // Add your "Add to Cart" logic here
-      console.log(`Added ${item.gameName} to cart`);
-    }}
-  >
-    <img src={asset.cart2} alt="Cart" /> Add To Cart
-  </button>
-</Link>
-
+              to={`/detail/${item._id}`}
+              key={item._id}
+              className="bg-[#1b1b1b] min-h-[500px] min-w-[312px] rounded-xl justify-start py-5 items-start flex flex-col"
+            >
+              <img
+                src={item.ImgArray[0]}
+                className="self-center"
+                alt={item.gameName}
+              />
+              <p className="pl-4 pt-2 text-xl font-semibold">{item.gameName}</p>
+              <p className="pl-4 pt-2 text-[16px]">{item.price}</p>
+              <button
+                className="flex self-center border-2 border-red-500 gap-3 my-5 px-[21%] py-3 rounded-3xl"
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent navigation when the button is clicked
+                  // Add your "Add to Cart" logic here
+                  console.log(`Added ${item.gameName} to cart`);
+                }}
+              >
+                <img src={asset.cart2} alt="Cart" /> Add To Cart
+              </button>
+            </Link>
           );
         })}
       </div>

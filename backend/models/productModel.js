@@ -5,7 +5,6 @@ const productSchema = new mongoose.Schema({
     price:{type:String},
     ImgArray:{type:Array},
     description:{type:String},
-    image:{type:String},
 },{timestamps:true})
 
 const productModel = mongoose.models.game || mongoose.model("game",productSchema);
