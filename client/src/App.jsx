@@ -1,109 +1,55 @@
-// import React from 'react'
-// import Nav from './Component/Nav'
-// import Footer from './Component/Footer'
-// import { Route, Routes } from 'react-router-dom'
-// import Detail from './pages/Detail'
-// import Home from './pages/Home'
-// import Shop from './pages/Shop'
-
-// const App = () => {
-//   return (
-//     <div className='bg-[#0a0a0a] text-white'>
-//       <Nav/>
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path='/Shop' element={<Shop/>}/>
-//         <Route path={`/detail/:id`} element={<Detail/>}/>
-//         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
-//       </Routes>
-//       <Footer/>
-//     </div>
-//   )
-// }
-
-
-// export default App
-
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Nav from './Component/Nav';
 import Footer from './Component/Footer';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Detail from './pages/Detail';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SignIn from './pages/SignIn';
+import Register from './pages/Register';
+import Reset from './pages/Reset';
+import Userdash from './UserDashborad/User.dash';
+import WishList from './UserDashborad/WishList';
+import OrderHistory from './UserDashborad/OrderHistory';
+import LogOut from './UserDashborad/LogOut';
 
 const App = () => {
+  const location = useLocation();
   useEffect(() => {
     AOS.init({ duration: 1200 }); // Initialize AOS with a default animation duration of 1200ms
   }, []);
 
   return (
     <div className='bg-[#0a0a0a] text-white'>
-      <Nav />
+      
+      {/* {location.pathname.includes('/userDash' || '/wishlist') ? '': <Nav />} */}
+      {['/userDash', '/wishlist', '/order', '/logout'].some(path => location.pathname.includes(path)) ? '' : <Nav />}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Shop" element={<Shop />} />
+        <Route path="/signIn" element={<SignIn />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/reset" element={<Reset />} />
+
+
+
+{/* User Dashboard  */}
+<Route path='/userDash' element={<Userdash/>}/>
+<Route path='/wishlist' element={<WishList/>}/>
+<Route path='/order' element={<OrderHistory/>}/>
+<Route path='/logout' element={<LogOut/>}/>
+
+
         <Route path={`/detail/:id`} element={<Detail />} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
-      <Footer />
+      {['/userDash', '/wishlist', '/order', '/logout'].some(path => location.pathname.includes(path)) ? '' : <Footer />}
+
     </div>
   );
 };
 
 export default App;
-
-
-
-// Chaos Battletome
-// Chaos Battletome
-// Chaos Battletome
-// Chaos Battletome
-// $98.00
-// $98.00
-// $98.00
-// $98.00
-// Add to Cart
-// Add to Cart
-// Add to Cart
-// Add to Cart
-// FREE AND FAST DELIVERY
-// 24/7 CUSTOMER SERVICE
-// MONEY BACK GUARANTEE
-// Free delivery for all orders over $140
-// Friendly 24/7 customer support
-// We reurn money within 30 days
-// What Our Client Says
-// “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“
-// “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“
-// Kristin Watson
-// Kristin Watson
-// Fashion Designer
-// Fashion Designer
-// Subscribe to Newsletter!
-// Email Address
-// Send
-// Logo
-// Product
-// Company
-// Access
-
-// Pricing
-// About
-// Login
-// Features
-// Contact
-// Star Free Trial
-// Influencers
-// Resources
-// Legal
-// AI Blog
-// Support
-// Privacy Policy
-// Community
-// FAQs
-// Terms & Conditions
-// Contact Support
-// FRONXSOLUTION – All Rights Reserved © Copyright 2024

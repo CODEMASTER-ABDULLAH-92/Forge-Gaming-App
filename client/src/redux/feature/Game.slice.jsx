@@ -31,6 +31,9 @@ export const counterSlice = createSlice({
         localStorage.setItem('cart', JSON.stringify(state));
       }
     },
+    getcartCount: (state)=>{
+
+    },
     clearCart: (state) => {
       state.value = {};
       // Remove cart from localStorage

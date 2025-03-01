@@ -37,7 +37,7 @@ const Nav = () => {
             <h1 className="text-[12px] font-semibold">
               <span className="text-gray-500 font-light">Welcome</span>
               <br />
-              Sign In/Register
+             <Link to="/SignIn">Sign In</Link>  <Link to="/register">/Register</Link> 
             </h1>
           </div>
 

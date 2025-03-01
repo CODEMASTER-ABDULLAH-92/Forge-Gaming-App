@@ -69,9 +69,13 @@ import menu from "/src/assets/menu.png";
 import cross from "/src/assets/cross.png";
 import Vector from "/src/assets/Vector.png";
 import Search from "/src/assets/search.png";
+import bellicon from "/src/assets/icon.png";
+import plus2 from "/src/assets/plus1.png";
 
 export const asset = {
   arr,
+  plus2,
+  bellicon,
   Search,
   Vector,
   cross,
@@ -159,7 +163,6 @@ export const battle = [
     Review1:"High Quality 3D Models:  All models are crafted with intricate detai ensuring they are perfect for both.",
    Review2:"Optimized for Game Engines:  All models are crafted with intricate detail, ensuring they are perfect.",
    Review2: "Versatile Use:  All models are crafted with intricate detail ensuring they are perfect for both digital and.",
-
   },
   {
     _id:'fehaq83492',
