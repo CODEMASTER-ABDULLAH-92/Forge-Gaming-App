@@ -4,8 +4,8 @@ import { UpdateGame,ListingGame,removeGame,addGame } from '../controllers/gameCo
 
 const gameRouter = express.Router();
 
-gameRouter.post("/addGame",upload.array("ImgArray", 10),addGame);
+gameRouter.post("/addGame",upload.array("ImgArray", 5),addGame);
 gameRouter.put("/update/:id",UpdateGame);
 gameRouter.delete("/remove/:id",removeGame);
 gameRouter.get("/listing",ListingGame);
-export default gameRouter
+export default gameRouter;
